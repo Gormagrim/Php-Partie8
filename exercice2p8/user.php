@@ -1,4 +1,5 @@
 <?php
+// on doit redémarrer la session pour y avoir accés.
     session_start();
 ?>
 
@@ -14,8 +15,9 @@
         <p><?= $_SESSION['firstname']; ?></p>
         <p><?= $_SESSION['lastname']; ?></p>
         <p><?= $_SESSION['age']; ?></p>
-   
-        
+        <?php 
+        // permet de supprimer les variables de session et détruire la session.
+        session_destroy(); ?>
     </body>
 </html>
 

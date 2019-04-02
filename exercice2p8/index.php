@@ -1,9 +1,10 @@
 <?php
 session_start();
-
 $_SESSION['firstname'] = 'Jean';
 $_SESSION['lastname'] = 'Pierre';
 $_SESSION['age'] = 19;
+// permet de cloturer la session en fin de lecture de la page. Ca ne supprime pas !
+session_write_close();
 ?>
 
 <!DOCTYPE html>
